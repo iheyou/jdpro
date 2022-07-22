@@ -187,7 +187,7 @@ def get_qltoken(username, password, twoFactorSecret):  # 方法 用于获取青�
 
 # 返回值 Token
 def ql_login():  # 方法 青龙登录(获取Token 功能同上)
-    path = '/ql/config/auth.json'  # 设置青龙 auth文件地址
+    path = '/ql/data/config/auth.json'  # 设置青龙 auth文件地址
     if not os.path.isfile(path):
         path = '/ql/data/config/auth.json'  # 尝试设置青龙 auth 新版文件地址
     if os.path.isfile(path):  # 进行文件真值判断
